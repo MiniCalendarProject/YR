@@ -1,0 +1,139 @@
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    >
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text=" 날짜" />
+
+            <Button
+                android:id="@+id/pickdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="2018-12-04" />
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="해야할 일" />
+        </TableRow>
+
+        <RadioGroup
+            android:id="@+id/type"
+            android:layout_width="match_parent"
+            android:layout_height="123dp"
+            android:orientation="vertical">
+
+            <TableRow>
+
+                <RadioButton
+                    android:id="@+id/type1"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:text="기념일"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/type2"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:text="약속"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/type3"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:text="학교"
+                    android:textSize="20dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <RadioButton
+                    android:id="@+id/type4"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:text="회사"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/type5"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:text="여행"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/type6"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:text="기타"
+                    android:textSize="20dp" />
+            </TableRow>
+        </RadioGroup>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/delbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="취소" />
+
+            <Button
+                android:id="@+id/addbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="추가" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
