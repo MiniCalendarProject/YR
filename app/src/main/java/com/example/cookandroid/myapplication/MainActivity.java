@@ -171,7 +171,7 @@ public class MainActivity extends AppCompatActivity {
                         x="기타";
                 }
                 sqlDB = myHelper.getWritableDatabase();
-                sqlDB.execSQL("INSERT INTO ToDoList VALUES (null, '" + pickdate.getText().toString() + "', '" + info.getText().toString() + "','" + x + "');");
+                sqlDB.execSQL("INSERT INTO ToDoList VALUES (null, '" + myear + "', '"+mmonth+"', '"+mday+"', '" + info.getText().toString() + "','" + x + "');");
                 sqlDB.close();
                 Toast.makeText(getApplicationContext(),"추가되었습니다.",Toast.LENGTH_SHORT).show();
             }
@@ -210,7 +210,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public void onCreate(SQLiteDatabase db) {
-            db.execSQL("CREATE TABLE ToDoList (_id INTEGER PRIMARY KEY AUTOINCREMENT, date TEXT, info TEXT, type TEXT);");
+            db.execSQL("CREATE TABLE ToDoList (_id INTEGER PRIMARY KEY AUTOINCREMENT, year INTEGER, month INTEGER, day INTEGER, info TEXT, type TEXT);");
         }
 
         @Override
